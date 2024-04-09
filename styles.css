@@ -1,0 +1,131 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+#recording-instructions {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: DodgerBlue;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+i {
+  margin-right: 5px;
+  margin-left: -5px;
+}
+
+#resetButton {
+  display: none; /* Initially don't display the button */
+  margin: 20px auto; /* Vertical margin and horizontally centered */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: grey;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:disabled {
+  background: #ccc;
+}
+
+#feedback {
+  margin-top: 20px;
+}
+
+#mouthPosition {
+  width: 20em;
+  height: 20em;
+  margin: 20px auto;
+}
+
+.result-correct {
+  color: MediumSeaGreen;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.result-incorrect {
+  color: crimson;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#guidance {
+  display: none; /* Initially hidden */
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #ff9800; /* Example warning color: orange */
+  border-radius: 5px;
+  color: #ff9800; /* Matching text color */
+  background-color: #fff3e0; /* Lighter shade for background */
+  font-size: 16px;
+  text-align: center;
+}
+
+.file-upload-wrapper {
+  text-align: center;
+  margin: 20px;
+}
+
+#customFileUpload {
+  padding: 10px 20px;
+  border: 2px solid DodgerBlue;
+  border-radius: 5px;
+  background-color: DodgerBlue;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#fileName {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+#audioPlayer {
+  margin: 20px auto;
+  display: none;
+}
+
+#gif {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 60%;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+
+  

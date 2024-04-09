@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pronunciation Practice</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Thực hành phát âm - Âm "qu"</h1>
+  
+  <!-- <button id="startRecord"><i class="fa-solid fa-play"></i>Start Recording</button>
+  <button id="stopRecord" disabled><i class="fa-solid fa-circle-stop"></i>Stop Recording</button> -->
+
+  <div class="file-upload-wrapper">
+    <button type="button" id="customFileUpload"><i class="fa-solid fa-file-arrow-up"></i>Tải tệp lên</button>
+    <input type="file" id="fileUpload" accept="audio/*" style="display: none;">
+    <span id="fileName">Chưa có tệp được chọn</span>
+  </div>
+  <audio id="audioPlayer" controls></audio>
+  <button id="resetButton"><i class="fas fa-history"></i>Làm mới</button>
+
+
+  <div id="feedback">
+    <div id="result"></div>
+    <p id="guidance" style="display:none;"></p>
+    <audio id="guidanceAudio" style="display: none;" controls></audio>
+    <img id="mouthPosition" src="" alt="" style="display:none;"/>
+    <iframe id="gif" width="240" height="240" frameBorder="0" style="display: none;" allowfullscreen></iframe>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
