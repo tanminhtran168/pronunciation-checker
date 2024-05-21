@@ -120,11 +120,13 @@ button:disabled {
 
 #gif {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
-  width: 60%;
   pointer-events: none;
   transform: translateX(-50%);
+  border-radius: 50%; /* Make the corners fully rounded */
+  border: none;       /* Optional: Remove the border */
+  overflow: hidden;   /* Ensures no overflow */
 }
 
 
